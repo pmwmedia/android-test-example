@@ -19,4 +19,4 @@ jobs:
                   api-level: 31
                   arch: x86_64
                   target: google_apis
-                  script: chmod +x ./gradlew && ./gradlew createDebugCoverageReport
+                  script: chmod +x ./gradlew && ./gradlew connectedAndroidTest
