@@ -1,7 +1,7 @@
 package com.example.myapplication;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -9,12 +9,12 @@ import org.junit.Test;
 public class ExampleInstrumentedTest {
     @Test
     public void passedTest() {
-        assertThat(1 + 1).isEqualTo(2);
+        assertEquals(2, 1 + 1);
     }
 
     @Test
     public void failedTest() {
-        assertThat(1 + 1).isEqualTo(3);
+        assertEquals(3, 1 + 1);
     }
 
     @Test
